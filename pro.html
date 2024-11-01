@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .contact {
+      display: flex;
+      width: 80%;
+      margin: auto;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .cont {
+      background-color: rgba(77, 77, 77, 0.507);
+      width: 40%;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px white;
+      transition: box-shadow 1s;
+      font-size: 20px;
+        text-align: center;
+      i {
+        letter-spacing: 5px;
+      }
+      p{
+        color: white;
+        text-align: center;
+      }
+    }
+    .cont:hover {
+      box-shadow: 0px 0px 5px black;
+    }
+    .git{
+        margin-top: 30px;
+    }
+    .git a {
+      padding: 10px;
+      font-size: 35px;
+      color: white;
+      i{
+        font-size: 50px;
+        text-align: center;
+      }
+    }
+            @media (max-width: 600px) { 
+                .cont{
+                    width: 90%;
+                }
+            }
+  </style>
+
+</head>
+
+<body>
+  <div class="con">
+    <div class="con1">
+      <div class="txt">
+          <h4>D V S Mani Kumar</h4>
+          <p>I'm <span>Developer</span></p>
+      </div>
+      <div class="nav">
+        <div class="menu-icon" onclick="toggleNav()">☰</div>
+          <ul id="menu_items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="edu.html">Education</a></li>
+              <li><a href="pro.html">Projects</a></li>
+              <li><a href="Resume3.pdf">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+
+    <div class="contact">
+        <!-- <h3 style="display: block;">Git Hub Projects</h3> -->
+      <div class="cont">
+        <i class="fa-solid fa-images"> Simple Gallery</i>
+        <p>Created a simple view of Gallery using HTML, CSS, JavaScript and Bootstrap when hovered on a image it gets displayed.
+        <br> To view it click <a href="https://manikumar0304.github.io/gallary/" >Here</a>
+        </p>
+
+      </div>
+      <div class="cont">
+        <i class="fa-solid fa-calculator"> Calculator</i>        
+          <p>Created a Calculator using HTML, CSS, JavaScript and Bootstrap where we can able to make operations such as Addition, Substraction, Multiplication, Division etc.
+            <br> To view it click <a href="https://manikumar0304.github.io/Calculator/" >Here</a>
+          </p>
+      </div>
+      <div class="cont">
+        <i class="fa-solid fa-robot"> Robotics Login</i>
+        <p>
+            Created a login page and a robotics page when I'm on Java Training.
+            Here you are able to login and enter the page of Robotics.(email : mani@gmail.com , password: 4455)
+            <br> To view it click <a href="https://manikumar0304.github.io/robotics/" >Here</a>
+        </p>
+      </div>
+      <div class="cont">
+        <i class="fa-solid fa-clipboard-list"> To Do List</i>  
+        <p>Here we are able to add or delete the tasks which we want.It is like Google Notes
+            <br> To view it click <a href="https://manikumar0304.github.io/To_DoList/" >Here</a>
+        </p>
+      </div>
+      <div class="cont">
+        <i class="fa-solid fa-paperclip"> Responsive WebPage</i> 
+        <p>I have designed a Responsive Web Page from Franchise Hotlist for my Practice at my internship.
+            I have done this using HTML, CSS, JS, Bootstrap
+            <br> To view it click <a href="https://manikumar0304.github.io/webpage_hotlist/" >Here</a>
+        </p>
+      </div>
+
+      <div class="cont">
+        <i class="fa-solid fa-user-tie"> Business Page</i>
+        <p>I have designed a Responsive Static Web Page for a Business in English and Telugu.
+            I have done this using HTML, CSS, JS, Bootstrap
+            <br> To view it click <a href="https://manikumar0304.github.io/TirumalaCutPieces/" >Here</a>
+        </p>
+      </div>
+
+      <div class="cont">
+        <i class="fa-solid fa-user-tie"> Pujari Booking</i>
+        <p>Collaborated in a team to develop a project on
+            pujaribooking.com for users looking to book priests for
+            various events and ceremonies. The platform also allows
+            users to book online pujas and reserve essential event
+            suppliers, such as tent rentals, catering services, and more.
+        <br> To view it click <a href="https://pujaribooking.com/" >Here</a>
+        </p>
+      </div>
+      <div class="cont">
+        <i class="fa-solid fa-receipt"> Invitation</i>
+        <p>Developed an invitation management feature for the
+            Weddinwin.ca website, allowing users to create customized
+            invitations for weddings, functions, and other events. Users
+            can add guests to their invitations, enabling guests to view
+            details and respond with their attendance status and other
+            answers to custom questions. This feature facilitates
+            seamless interaction between event organizers and guests,
+            streamlining the RSVP process.
+        </p>
+      </div>
+      <div class="cont">
+        <i class="fa-solid fa-clock"> Hours of Operation</i>
+        <p>Implemented a Hours of Operation feature on
+            CantonShoppingGuide.com, enabling vendors to add and
+            manage their shop availability. This functionality allows
+            vendors to specify open and closed times, making it easy for
+            customers to view accurate and up-to-date operating hours.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+   function toggleNav() {
+    const menuItems = document.getElementById('menu_items');
+    if (menuItems.style.display === 'none' || menuItems.style.display === '') {
+        menuItems.style.display = 'block';
+    } else {
+        menuItems.style.display = 'none';
+    }
+}
+
+</script>
+</body>
+
+
+
+</html>

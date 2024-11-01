@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .contact {
+      display: flex;
+      width: 80%;
+      margin: auto;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .cont {
+      background-color: rgba(77, 77, 77, 0.507);
+      width: 40%;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px white;
+      transition: box-shadow 1s;
+      font-size: 20px;
+        text-align: center;
+      i {
+        letter-spacing: 5px;
+      }
+      p{
+        color: white;
+        text-align: center;
+      }
+    }
+    .cont:hover {
+      box-shadow: 0px 0px 5px black;
+    }
+    .git{
+        margin-top: 30px;
+    }
+    .git a {
+      padding: 10px;
+      font-size: 35px;
+      color: white;
+      i{
+        font-size: 50px;
+        text-align: center;
+      }
+    }
+    @media (max-width: 600px) { 
+                .cont{
+                    width: 90%;
+                }
+            }
+  </style>
+   
+</head>
+
+<body>
+  <div class="con">
+    <div class="con1">
+      <div class="txt">
+          <h4>D V S Mani Kumar</h4>
+          <p>I'm <span>Developer</span></p>
+      </div>
+      <div class="nav">
+        <div class="menu-icon" onclick="toggleNav()">☰</div>
+          <ul id="menu_items">
+              <li><a href="index.html">Home</a></li>
+              <li><a   href="about.html">About</a></li>
+              <li><a    href="edu.html">Education</a></li>
+              <li><a   href="pro.html">Projects</a></li>
+                            <!-- <li><a   href="skill.html">Skills</a></li> -->
+
+              <li><a   href="Resume3.pdf">Resume</a></li>
+              <li><a   href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+    <div class="contact">
+      <div class="cont">
+        <i class="fa-solid fa-location-dot"> Address</i>
+        <p>D.NO : 2-12 , Pedda Veedi <br>
+          Gorripudi , Karapa Mandal <br>
+          533468 , East Godavari <br>
+          Andhra Pradesh
+        </p>
+
+      </div>
+      <div class="cont">
+        <i class="fa-solid fa-share-nodes"> Social Media</i>
+        <div class="git">
+          <a   href="https://www.linkedin.com/in/dhanisetti-venkata-siva-mani-kumar-ba92a7217"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a   href="https://github.com/ManiKumar0304"><i class="fa-brands fa-square-github"></i></a>
+          <a   href="mailto:manikumardhanisetti@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a   href="https://www.instagram.com/mk_manikumar_0304/"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+
+      </div>
+      <div class="cont">
+        <i class="fa-solid fa-envelope"> Email</i>
+        <p style=" overflow-wrap: break-word;">
+            manikumardhanisetti@gmail.com 
+        </p>
+      </div>
+      <div class="cont">
+        <i class="fa-solid fa-phone"> Phone</i>
+        <p>9666376082</p>
+
+      </div>
+    </div>
+  </div>
+ <script>
+   function toggleNav() {
+    const menuItems = document.getElementById('menu_items');
+    if (menuItems.style.display === 'none' || menuItems.style.display === '') {
+        menuItems.style.display = 'block';
+    } else {
+        menuItems.style.display = 'none';
+    }
+}
+
+</script>
+</body>
+
+
+</html>
