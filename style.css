@@ -87,4 +87,7 @@ body {
     .con1 ul li{
         padding: 3px;
     }
+     .con1 h4,.con1 p{
+        text-align: center;
+    }
 }
